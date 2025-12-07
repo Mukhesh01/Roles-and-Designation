@@ -1,1 +1,37 @@
 <p>designation works!</p>
+
+<div class="row">
+    @for (item of DesigList;track $index){
+        <div class="col-3">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h4 class="card-title">{{item.designation}}</h4>
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Delete</a>
+            </div>
+        </div>
+    </div>
+    }
+    
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered table-striped border-0">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Id</th>
+                    <th>Designation Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of DesigList; let srno = index">
+                    <td>{{srno+1}}</td>
+                    <td>{{item.designationId}}</td>
+                    <td>{{item.designation}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

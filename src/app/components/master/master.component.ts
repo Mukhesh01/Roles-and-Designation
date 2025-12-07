@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './master.component.css'
 })
 export class MasterComponent {
-  currentComponent:string="Roles";
+  currentComponent:string="Designation";
 
   changeTab(tabName:string){
     this.currentComponent=tabName;

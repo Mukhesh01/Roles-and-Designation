@@ -1,8 +1,43 @@
-<h1>Angular</h1>
-<!-- <app-roles></app-roles>
-<app-designation></app-designation> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
 
-<app-master></app-master>
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <!-- Toggler (for mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/master" routerLinkActive="active" >Master</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/employee'" routerLinkActive="active" >Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/client" routerLinkActive="active" >Client</a>
+        </li>
+       
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+
+  </div>
+</nav>
 
 
-<!-- <router-outlet /> -->
+<!-- <roles></roles> -->
+<!-- <master></master> -->
+<!-- <designation></designation> -->
+ <div class="container pt-1">
+    <router-outlet />
+ </div>
