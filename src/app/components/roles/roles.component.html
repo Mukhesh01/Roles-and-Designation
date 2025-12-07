@@ -1,1 +1,84 @@
 <p>roles works!</p>
+
+<!-- <div class="row">
+    <div class="col-2">
+        <p>First Name : {{firstName}}</p>
+    </div>
+    <div class="col-2">
+        <p>Trrue/False : {{isActive}}</p>
+    </div>
+    <div class="col-2">
+        <p>Angular version : {{angularVersion}}</p>
+    </div>
+    <div class="col-2">
+        <p>version : {{version}}</p>
+    </div>
+    <div class="col-2">
+        <p>Current Date : {{currentDate}}</p>
+    </div>
+    <div class="col-2">
+        <p>selected data : {{selectedState}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstName" class="form-control" />
+    </div>
+    <div class="col-3">
+        <input  [type]="inputType" />
+    </div>
+    <div class="col-3">
+        <input  [type]="inputCheckbox" />
+    </div>
+    <div class="col-3">
+        <input  [type]="inputButton" [value]="Value"/>
+    </div>
+    <div class="col-3 mt-2">
+       <select [(ngModel)]="selectedState">
+            <option  value="MH">MH</option>
+            <option  value="MP">MP</option>
+            <option  value="Goa">Goa</option>
+        </select>
+    </div>
+</div>
+<div class="row mt-2 mb-2">
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showWelcomeAlert()">Alert message</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showMessage('Welcome to the angular class')">Angular</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showMessage('Welcome to the react class')">React</button>
+    </div>
+</div> -->
+
+<div class="row">
+   
+         <div class="col-12">
+        <table class="table table-bordered table-striped border-0">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Id</th>
+                    <th>Role Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of roleList;let srno=index">
+                    <td>{{srno+1}}</td>
+                    <td>{{item.roleId}}</td>
+                    <td>{{item.role}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+    
+   
+</div>
+
+
+
+
+
